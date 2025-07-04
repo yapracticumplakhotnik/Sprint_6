@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import pages.MainPage;
 
 import pages.OrderPage;
+import utils.Constant;
 
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -23,7 +24,7 @@ public class OrderTest {
     public void setUp() {
         driver = new ChromeDriver();
         //driver = new FirefoxDriver();
-        driver.get("https://qa-scooter.praktikum-services.ru/");
+        driver.get(Constant.BASE_URL);
         mainPage = new MainPage(driver);
     }
 
